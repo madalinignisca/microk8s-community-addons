@@ -64,7 +64,6 @@ $HELM install openebs openebs/openebs --namespace $OPENEBS_NS --create-namespace
     --set localprovisioner.basePath="$SNAP_COMMON/var/openebs/local" \
     --set jiva.enabled=true \
     --set jiva.storageClass.name=openebs-jiva \
-    --set jiva.storageClass.isDefaultClass=true \
     --set jiva.csiNode.kubeletDir="$SNAP_COMMON/var/lib/kubelet/" \
     --set nfs-provisioner.enabled=$NFS_ENABLED \
     --set nfs-provisioner.nfsStorageClass.backendStorageClass=openebs-jiva
